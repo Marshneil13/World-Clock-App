@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Button({text, route}) {
   return (
     <div className='buttonDiv'>
-        <button className='btn'><Link className='btn' to={route}>{text}</Link></button>
+       <Link className={`btn ${text==='About'&&'btnAbout'}`}  to={route}>{text}</Link>
     </div>
   )
 }

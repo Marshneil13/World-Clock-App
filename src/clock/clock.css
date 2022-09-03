@@ -1,0 +1,25 @@
+.clock{
+    width: max-content;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock .time{
+    color: white;
+    background-color: transparent;
+    font-size: 3rem;
+    border: 2px solid rgb(3, 244, 244);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0.4em 0.4em -0.2em rgba(0, 255, 255, 0.688);
+    border-radius: 16px;
+}
+
+.timeHead {
+    color: white;
+    font-size: 3rem;
+    /* border: 1px solid white; */
+    padding: 1rem;
+}

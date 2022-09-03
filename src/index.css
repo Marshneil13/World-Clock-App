@@ -1,32 +1,89 @@
 body {
   margin: 0;
+  background-image: url(./assets/NightSky.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    /* border: 1px solid red; */
+    /* height: 30vh; */
+}
+
+
+.homeContainer{
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .mainHeadDiv{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
-    font-size: 40px;
+   /* border: 1px solid greenyellow; */
+    padding: 0px;
+    width: 100vw;
+}
+
+.mainHead{
+  font-size: 6rem;
+  padding: 0px;
+  margin-top: 0;
+  color: white;
+  /* border: 1px solid orange; */
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutDiv{
+    /* border: 1px solid white; */
+    width: 98vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .buttonDiv .btn{
-  background-color: black;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  font-size: 24px;
-  padding: 18px;
-  width: 150px;
-  cursor: pointer;
-  margin: 5px;
-  text-decoration: none;
+      font-size: 1.4rem;
+      color: #fff;
+      border: 1px solid white;
+      background: none;
+      padding: 10px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 16px;
+      width: 220px;
 }
 
 .buttonDiv .btn:hover{
-  box-shadow: 0 0.5em 0.5em -0.2em #96a9a1;
+  box-shadow: 0 0.6em 0.6em -0.2em #96a9a1;
     transform: translateY(-0.2em);
+    background-color: rgba(0, 225, 255, 0.251);
+}
+
+.buttonDiv .btnAbout{
+  width: max-content;
+}
+
+.buttonDiv .btnAbout:hover{
+  background-color: aqua;
+  color: black;
+  box-shadow: none;
+  transform: none;
 }
 
 .mainContent{
@@ -41,4 +98,35 @@ body {
   flex-direction: column;
   justify-content: center;
 }
- 
+
+.footIcon{
+  /* border: 1px solid white; */
+  color: #fff;
+  margin-left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  transform: scale(1.8) translateY(1px);
+}
+
+.footIcon:hover{
+  color: aquamarine;
+}
+
+.aboutButton{
+  width: max-content;
+}
+
+.timeContainer{
+  width: 100vw;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  body{
+      background-image: url(./assets/NightSky.jpg);
+  }
+
+}

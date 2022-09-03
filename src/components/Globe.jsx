@@ -1,5 +1,5 @@
 import React from 'react'
-import source from '../assets/Animated_Globe.gif'
+import source from '../assets/Animated-Globe-unscreen.gif'
 
 function Globe() {
   return (

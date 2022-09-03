@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home'
 import LocationTime from './pages/LocationTime';
 import TimeDifference from './pages/TimeDifference';
+import About from "./pages/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/location-time' element={<LocationTime/>} />
         <Route path='/time-difference' element={<TimeDifference/>} />
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </BrowserRouter>
   );
