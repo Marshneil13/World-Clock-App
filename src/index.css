@@ -1,23 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
   background-image: url(./assets/NightSky.jpg);
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
-.headerContainer{
+.headerContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-    /* border: 1px solid red; */
-    /* height: 30vh; */
+  /* border: 1px solid red; */
+  /* height: 30vh; */
 }
 
-
-.homeContainer{
+.homeContainer {
   /* border: 1px solid red; */
   width: 100vw;
   height: 100vh;
@@ -26,16 +27,16 @@ body {
   flex-wrap: wrap;
 }
 
-.mainHeadDiv{
+.mainHeadDiv {
   display: flex;
   flex-direction: row;
   justify-content: center;
-   /* border: 1px solid greenyellow; */
-    padding: 0px;
-    width: 100vw;
+  /* border: 1px solid greenyellow; */
+  padding: 0px;
+  width: 100vw;
 }
 
-.mainHead{
+.mainHead {
   font-size: 6rem;
   padding: 0px;
   margin-top: 0;
@@ -45,61 +46,105 @@ body {
   align-items: flex-start;
 }
 
-.aboutDiv{
+.mainContentAbout{
+    width: 70vw;
+    margin: auto;
+    padding: 2.5%;
     /* border: 1px solid white; */
-    width: 98vw;
-    height: 7vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgba(127, 255, 212, 0.354);
 }
 
-.buttonDiv .btn{
-      font-size: 1.4rem;
-      color: #fff;
-      border: 1px solid white;
-      background: none;
-      padding: 10px 40px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 16px;
-      width: 220px;
+.aboutHead{
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-size: 4.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  margin-top: 0%;
+  margin-bottom: 1%;
 }
 
-.buttonDiv .btn:hover{
+.aboutText{
+  color: white;
+  line-height: 150%;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
+.credits .aboutText{
+  color: white;
+  font-size: 1.2rem;
+}
+
+.iconDiv a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding:0 7px ;
+}
+
+.aboutDiv {
+  /* border: 1px solid white; */
+  width: 98vw;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttonDiv .btn {
+  font-size: 1.4rem;
+  color: #fff;
+  border: 1px solid white;
+  background: none;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 220px;
+}
+
+.buttonDiv .btn:hover {
   box-shadow: 0 0.6em 0.6em -0.2em #96a9a1;
-    transform: translateY(-0.2em);
-    background-color: rgba(0, 225, 255, 0.251);
+  transform: translateY(-0.2em);
+  background-color: rgba(0, 225, 255, 0.251);
 }
 
-.buttonDiv .btnAbout{
+.buttonDiv .btnAbout {
   width: max-content;
 }
 
-.buttonDiv .btnAbout:hover{
+.buttonDiv .btnAbout:hover {
   background-color: aqua;
+  transform: scale(0.95);
+  transition-duration:300ms ;
   color: black;
+  border-color: transparent;
   box-shadow: none;
-  transform: none;
 }
 
-.mainContent{
+.mainContent {
   display: flex;
   justify-items: center;
   justify-content: space-around;
 }
 
-.sideContent{
+.sideContent {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.footIcon{
+.footIcon {
   /* border: 1px solid white; */
   color: #fff;
   margin-left: 8px;
@@ -108,15 +153,15 @@ body {
   transform: scale(1.8) translateY(1px);
 }
 
-.footIcon:hover{
+.footIcon:hover {
   color: aquamarine;
 }
 
-.aboutButton{
+.aboutButton {
   width: max-content;
 }
 
-.timeContainer{
+.timeContainer {
   width: 100vw;
   /* border: 1px solid white; */
   display: flex;
@@ -124,9 +169,39 @@ body {
   align-items: center;
 }
 
+.infoIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 @media (max-width: 600px) {
-  body{
-      background-image: url(./assets/NightSky.jpg);
+  .homeContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
+  .headerContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .mainHeadDiv{
+    width: max-content;
+    display: flex;
+    border: 1px solid white;
+    justify-content: flex-start;
+  }
+  .mainHead{
+    font-size: 2rem;
+    font-stretch: expanded;
+  }
+  .aboutDiv{
+    width: max-content;
+  }
+
+  
+  
 }
