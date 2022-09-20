@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import {BsGithub} from "react-icons/bs"
 import {BsLinkedin} from "react-icons/bs"
 
@@ -25,6 +26,9 @@ function About() {
                 </div>
             </div>
         </div>
+      </div>
+      <div>
+      <Footer/>
       </div>
     </div>
   );

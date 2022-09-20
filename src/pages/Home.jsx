@@ -2,10 +2,8 @@ import React from "react";
 import Globe from "../components/Globe";
 import Button from "../components/Button";
 import Clock from "../clock/Clock";
-import { BsArrowLeft } from "react-icons/bs";
-import { FcAbout } from "react-icons/fc";
-import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -27,6 +25,9 @@ function Home() {
       </div>
       <div className="timeContainer">
          <Clock/>
+      </div>
+      <div>
+      <Footer/>
       </div>
     </div>
   );

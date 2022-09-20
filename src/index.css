@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-x: hidden;
 }
 
@@ -54,6 +54,12 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgba(127, 255, 212, 0.354);
+}
+
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .aboutHead{
@@ -173,6 +179,31 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: end;
+}
+
+.githubIcon:hover{
+ color: #70f0bb;
+}
+
+.linkedInIcon:hover{
+ color: #70f0bb;
+}
+
+.footer{
+  /* width: 100vw;
+  padding: 10%; */
+  background-color: rgba(255, 255, 255, 0.318);
+  margin-bottom: 0;
+}
+
+.footerContent{
+  display: flex;
+  justify-content: center;
+}
+
+.footerContent p{
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 600px) {
