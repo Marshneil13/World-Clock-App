@@ -8,7 +8,9 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div className="homeContainer">
+       <div>
       <Header text={"About"} route={"/about"}/>
+       </div> 
       <div className="mainContent">
         <div className="sideContent">
           <Button text={"Find Time of the Location"} route={"/location-time"} />

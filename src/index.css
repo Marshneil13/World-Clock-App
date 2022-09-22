@@ -6,7 +6,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .mainHeadDiv {
@@ -57,9 +57,11 @@ body {
 }
 
 .aboutContainer{
+  /* border: 1px solid white; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .aboutHead{
@@ -129,7 +131,7 @@ body {
 }
 
 .buttonDiv .btnAbout:hover {
-  background-color: aqua;
+  background-color: rgb(0, 255, 255);
   transform: scale(0.95);
   transition-duration:300ms ;
   color: black;
@@ -192,13 +194,14 @@ body {
 .footer{
   /* width: 100vw;
   padding: 10%; */
-  background-color: rgba(255, 255, 255, 0.318);
+  background-color: rgba(255, 255, 255, 0.088);
   margin-bottom: 0;
 }
 
 .footerContent{
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .footerContent p{

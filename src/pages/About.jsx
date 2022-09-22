@@ -7,7 +7,9 @@ import {BsLinkedin} from "react-icons/bs"
 function About() {
   return (
     <div className="aboutContainer">
-      <Header text={"Home Page"} route={"/"} />
+        <div>
+          <Header text={"Home Page"} route={"/"} />
+        </div>
       <div className="mainContentAbout">
         <h2 className="aboutHead">About</h2>
         <p className="aboutText">
@@ -27,7 +29,7 @@ function About() {
             </div>
         </div>
       </div>
-      <div>
+      <div className="aboutFooter">
       <Footer/>
       </div>
     </div>
