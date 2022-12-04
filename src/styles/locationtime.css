@@ -1,0 +1,64 @@
+.timeForm, .inputDiv, .submitDiv{
+    /* border: 1px solid white; */
+    padding: 5px;
+}
+
+.inputDiv{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.inputLabel {
+    color: white;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 1px solid white; */
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.inputContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.submitDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown{
+    color: white;
+        background-color: rgba(87, 193, 250, 0.241);
+        font-size: 1.5rem;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* border: 2px solid rgba(3, 128, 244, 0.389); */
+        border-color: transparent;
+            text-align: center;
+            border-radius: 16px;
+            width: 270px;
+            height: 50px;
+    }
+
+.options{
+    color: black;
+}
+
+.submitBtn{
+    border: 2px solid rgb(3, 244, 244);
+    color: white;
+    border-radius: 16px;
+    background-color: transparent;
+    padding: 15px 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+}
+.submitBtn:hover{
+    background-color: rgba(3, 244, 244, 0.458);
+    transition: 200ms ease-in-out;
+    /* border: none; */
+}

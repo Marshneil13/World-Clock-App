@@ -7,6 +7,7 @@ function TimeDifference() {
         <div>
             <Header text={"Home Page"} route={"/"} />
         </div>
+        <div></div>
     </div>
   )
 }
