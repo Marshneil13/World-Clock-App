@@ -4,6 +4,7 @@ import { useState } from "react";
 import Json from "../data/db.json"
 import '../styles/locationtime.css';
 import axios from "axios";
+import '../time/Time.js'
 
 function LocationTime() {
 
@@ -16,6 +17,7 @@ function LocationTime() {
   const [location, setLocation] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
+
   };
 
   const handleArea = (e) => {
@@ -87,6 +89,9 @@ function LocationTime() {
           type="submit">Submit</button>
           </div>
         </form>
+      </div>
+      <div>
+        
       </div>
     </div>
   );
