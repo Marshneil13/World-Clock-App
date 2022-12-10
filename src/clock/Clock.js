@@ -4,6 +4,7 @@ import './clock.css';
 
 const Clock = () => {
     let time = new Date().toLocaleTimeString();
+    console.log("TIME OF SYSTEM", time);
     const [currentTime, setCurrentTime] = useState(time);
 
     const updateTime = () => {

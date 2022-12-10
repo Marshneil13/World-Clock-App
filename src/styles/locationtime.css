@@ -55,7 +55,8 @@
     background-color: transparent;
     padding: 15px 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .submitBtn:hover{
     background-color: rgba(3, 244, 244, 0.458);
