@@ -117,10 +117,11 @@ function LocationTime() {
         </form>
       </div>
       {display&&(
-        <div>
-          <Date date={date}/>
-          <Day day={day}/>
-          <Time time={time}/>
+        <div className="display">
+          <h2 className='displayHead'>{`${timezone}, ${location}`}</h2>
+          <Date date={date} difference={false}/>
+          <Day day={day} difference={false}/>
+          <Time time={time} difference={false}/>
         </div>
       )}
     </div>

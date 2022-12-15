@@ -1,9 +1,9 @@
 import React from 'react'
 import './Time.css'
 
-function Time({time}) {
+function Time({time, difference}) {
   return (
-    <div className='timeDiv'>
+    <div className={difference?'timeDiff':'timeDiv'}>
       <h2>{time}</h2>
     </div>
   )

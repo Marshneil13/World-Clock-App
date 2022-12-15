@@ -1,10 +1,11 @@
 import React from 'react'
 import './Day.css'
 
-function Day({day}) {
+function Day({day, difference}) {
+  const week = ["","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
   return (
-    <div className='dayDiv'>
-      <h2>{day}</h2>
+    <div className={difference?'dayDiff':'dayDiv'}>
+      <h2>{week[day]}</h2>
     </div>
   )
 }

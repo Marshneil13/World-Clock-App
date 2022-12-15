@@ -59,7 +59,61 @@
     font-weight: 500;
 }
 .submitBtn:hover{
-    background-color: rgba(3, 244, 244, 0.458);
+    background-color: rgba(3, 244, 244, 0.64);
+    color: rgb(2, 2, 79);
+    font-weight: 600;
     transition: 200ms ease-in-out;
     /* border: none; */
+}
+
+.displayContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display{
+    /* border: 1px solid wheat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.display1Head, .display2Head, .displayHead{
+    color: rgb(2, 2, 79);
+    background-color: rgba(127, 255, 212, 0.558);
+        font-size: 1.75rem;
+        text-align: center;
+        padding: 20px 10px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        /* border: 1px solid white; */
+        width: 450px;
+}
+
+.displayHead{
+    font-size: 2.3rem;
+    width: 950px;
+}
+
+.diffDisplayContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.display1, .display2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+
+.display1{
+    margin-left: 30px;
+}
+.display2{
+    margin-right: 30px;
 }

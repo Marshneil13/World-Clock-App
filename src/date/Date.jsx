@@ -1,10 +1,14 @@
 import React from 'react'
 import './Date.css'
 
-function Date({date}) {
+function Date({date, difference}) {
+
+  const dateArr = date.split('-');
+  console.log("DATE ARRAY" , dateArr);
+  const month = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   return (
-    <div className='dateDiv'>
-      <h2>{date}</h2>
+    <div className={difference? 'dateDiff':'dateDiv'}>
+      <h2>{`${dateArr[2]} ${month[parseInt(dateArr[1])]}, ${dateArr[0]}`}</h2>
     </div>
   )
 }
