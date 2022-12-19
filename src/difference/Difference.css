@@ -1,0 +1,13 @@
+.diffValue {
+    color: white;
+}
+
+.hourDiffVal, .minDiffVal{
+    color: white;
+    display: flex;
+    font-size: 2.75rem;
+}
+
+.diffValue{
+    display: flex;
+}

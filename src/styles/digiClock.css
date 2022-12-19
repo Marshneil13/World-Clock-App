@@ -1,0 +1,57 @@
+.digiClock{
+    color: white;
+        background-color: rgba(127, 229, 255, 0.29);
+        font-size: 2.3rem;
+        /* font-weight: 400; */
+        text-align: center;
+        padding: 0px 10px;
+        /* border: 1px solid white; */
+        width: 950px;
+        /* padding: 30px 10px; */
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+}
+
+.digiDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(127, 255, 212, 0.558);
+    box-shadow: 0 0.4em 0.4em -0.2em rgba(127, 255, 212) ;
+    border-radius: 16px;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.digiPara{
+    /* border: 1px solid white; */
+    margin-bottom: 2px;
+    margin-top: 2px;
+    color: rgba(127, 255, 212);
+}
+
+.digiSmall{
+    /* border: 1px solid white; */
+    padding-left: 10px;
+    padding-right: 8px;
+}
+
+.digiDiff{
+    display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(127, 229, 255, 0.29);
+        font-size: 1.75rem;
+        text-align: center;
+        width: 450px;
+        font-weight: 300;
+        /* border: 1px solid white; */
+        padding: 0px 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+}

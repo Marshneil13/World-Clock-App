@@ -6,6 +6,7 @@ import { useState } from "react";
 import Time from "../time/Time";
 import Date from "../date/Date";
 import Day from "../day/Day";
+import Difference from '../difference/Difference';
 
 function TimeDifference() {
 
@@ -53,6 +54,8 @@ const handleArea2 = (e) => {
   const handleChange1 = async (e) => {
     setTimezone1(e.target.value);
     setDisplay(false);
+    // setTimezone2("");
+    // setLocation2("");
     setArea1Disable(e.target.value === 'select');
     const response = await fetch(`${process.env.REACT_APP_WORLD_CLOCK_URL}/timezone/${e.target.value}`);
     const data = await response.json(); 
@@ -209,6 +212,11 @@ const handleArea2 = (e) => {
           <Date date={date1} difference={true}/>
           <Day day={day1} difference={true}/>
           <Time time={time1} difference={true}/>
+        </div>
+
+        <div className="displayDiff">
+          <h2>Time Difference:</h2>
+          <Difference time1={time1} time2={time2} date1={date1} date2={date2}/>
         </div>
                 
         <div className='display2'>
